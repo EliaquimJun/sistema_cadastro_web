@@ -1,0 +1,984 @@
+/* Estilos para a página inicial */
+.home-container {
+    display: flex;
+    flex-direction: row; /* Garante que os itens sejam dispostos em linha */
+    align-items: stretch; /* Faz com que os filhos do container se estiquem para ocupar a altura total */
+    flex-wrap: wrap; /* Permite que os itens se ajustem conforme a largura da tela */
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.left-home-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #06547E;
+    text-align: center;
+    margin: 10 auto 10px;
+    font-weight:bolder;
+}
+
+.left-home-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #6C6C6C;
+    text-align: center;
+    margin: 0 auto 30px;
+    margin-top: -10px;
+    white-space: nowrap; /* Adicionado para prevenir quebra de linha */
+}
+
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 10px;
+    gap: 20px;
+
+    max-height: 95vh; /* Limita altura para evitar rolagem da página */
+    min-height: 95vh;
+}
+
+.left-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-height: 95vh; /* Limita altura para evitar rolagem da página */
+    min-height: 95vh;
+    padding: 10px 20px ;
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding não adicione largura ao elemento */
+    overflow-y: auto; /* Permite rolagem se conteúdo exceder a altura */
+    
+}
+
+.left-card h2 {
+    color: #06547E;
+    font-family: 'Inter', sans-serif;
+}
+
+.left-card p {
+    color: #6C6C6C;
+    font-family: 'Inter', sans-serif;
+}
+
+.pesquisa-e-filtro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.select-pesquisa-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    
+    border-radius: 4px; /* Borda arredondada para o input */
+  
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 20%; /* Ajuste a largura conforme necessário */
+}
+
+.filtro-data {
+    width: 100%;
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.icon-chevron-down {
+    position: relative;
+      /* Distância do ícone da borda direita da entrada */
+
+    cursor: pointer;
+    font-size: 18px;
+    right: 25px;
+    margin-right: 0px;
+    pointer-events: none;
+
+    z-index: 100;
+    color: #ccc;
+
+}
+
+
+
+.input-pesquisa-container {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    padding: 5px; /* Padding interno do input */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Borda arredondada para o input */
+    color: #ccc !important;
+  
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .input-pesquisa-container  input{
+    width: 100%;
+    background-color: transparent!important; /* Azul um pouco mais forte ao clicar ou focar */
+    margin-left: 5px;
+    
+    
+    padding: 10px; /* Padding interno do input */
+    border: none !important; /* Cor da borda do input */
+    border-radius: 4px; /* Borda arredondada para o input */
+    padding: 0px;
+
+}
+
+
+  .input-icon-pesquisa {
+
+    position: relative;
+      /* Distância do ícone da borda direita da entrada */
+    color:#06547E;
+    cursor: pointer;
+    font-size: 18px;
+    right: 25px;
+    margin-right: 0px;
+
+    z-index: 100;
+
+}
+  
+
+  
+
+
+
+.input-container-home label {
+    color: #6C6C6C;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-container-home {
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do input */
+    align-items: flex-start; /* Alinha itens à esquerda */
+    margin-bottom: 10px;
+}
+
+.input-container-home input {
+    width: 80%;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+}
+
+.input-container-home select {
+    width: 90%;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+    margin-bottom: 10px;
+    color: #6C6C6C;
+}
+
+
+
+
+/* Estilos ao passar o mouse sobre inputs e selects */
+.input-container-home input:hover,
+.input-container-home select:hover {
+    background-color: #f3f3f3; /* Azul suave ao passar o mouse */
+    border: 1px solid #155f8e;
+}
+
+/* Estilos quando inputs e selects estão focados ou ativos */
+.input-container-home input:focus,
+.input-container-home select:focus,
+.input-container-home input:active,
+.input-container-home select:active {
+    background-color: #f3f3f3; /* Azul um pouco mais forte ao clicar ou focar */
+    border: 1px solid #155f8e;
+    outline: none; /* Remove o contorno padrão para evitar sobreposições visuais indesejadas */
+}
+
+/* Estilo para a caixa de assinatura antes da assinatura ser coletada */
+.assinatura-container {
+    color: #6C6C6C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Ajuste conforme necessário */
+    width: 85%; /* Consistente com outras inputs */
+    max-width: 85%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px dashed #CDCDCD; /* Dashed para diferenciar de inputs comuns */
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fundo claro para destacar área clicável */
+}
+
+
+.assinatura-overlay {
+    position: fixed; /* Posicionamento fixo em relação à viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    z-index: 1000; /* Garante que o overlay fique acima de outros conteúdos */
+}
+
+
+.assinatura-container:hover {
+    border-color: #155f8e; /* Cor ao passar o mouse, consistente com outras inputs */
+}
+
+/* Estilo específico para a imagem da assinatura */
+.assinatura-imagem {
+    width: 85%;
+    height: 80%; /* Limita a altura da imagem para manter dentro do container */
+   
+}
+/* Ao aplicar esses estilos, certifique-se de adicionar as classes correspondentes no seu JSX/HTML */
+
+
+.register-button {
+    background-color: #06547E;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.right-card table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    font-family: 'Inter', sans-serif; /* Exemplo de fonte. Ajuste conforme necessário */
+    position: relative;
+    border-spacing: 0;
+    
+    
+ 
+}
+
+
+
+.right-card th,
+.right-card td {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #ddd; /* Cor da borda das células */
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.right-card thead th {
+    background-color: #06547E; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo para as linhas em edição */
+.right-card tr[style*="#06547E"] {
+    background-color: #e7f5ff; /* Cor de fundo para a linha em edição, opcional */
+}
+
+/* Botões de ação na tabela */
+.right-card .button-edit,
+.right-card .button-delete,
+.right-card .button-entrada {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+/* Ajuste adicional para inputs dentro da tabela, caso estejam sendo usados */
+.input_edit_table  {
+ 
+  
+    padding: 20px; /* Padding interno do input */
+    border: 1px solid #06547E !important; /* Cor da borda do input */
+    border-radius: 4px; /* Borda arredondada para o input */
+}
+
+
+.right-card input:focus,
+.right-card select:focus,
+.right-card input:active,
+.right-card select:active {
+    background-color: #f3f3f3; /* Azul um pouco mais forte ao clicar ou focar */
+    border: 1px solid #155f8e;
+    outline: none; /* Remove o contorno padrão para evitar sobreposições visuais indesejadas */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.right-card .button-edit:hover,
+.right-card .button-delete:hover,
+.right-card .button-entrada:hover {
+    opacity: 0.8; /* Torna o botão um pouco transparente ao passar o mouse */
+}
+
+
+.right-container {
+    flex-grow: 1; /* Faz o right-container ocupar todo o espaço restante */
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 150vh;
+    max-height: 95vh; /* Limita altura para evitar rolagem da página */
+    min-height: 95vh;
+
+    border-radius: 15px; /* Estilo opcional para combinar com o left-card */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+.right-card {
+    flex-grow: 1; /* Faz o right-container ocupar todo o espaço restante */
+    padding: 20px 20px;
+    
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #ffffff;
+    border-radius: 15px; /* Estilo opcional para combinar com o left-card */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+
+
+
+
+/* Estilos para o rodapé */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 0px 0;
+}
+
+.logo {
+    min-width: 220.85px;
+    min-height: 61px;
+    margin-top: -10px;
+}
+
+
+/* Usando Media Queries para ajustar o layout baseado no tamanho da tela */
+@media (min-width: 1100px) {
+
+.right-card th,
+.right-card td {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #ddd; /* Cor da borda das células */
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.input_edit_table  {
+ 
+  
+    padding: 10px; /* Padding interno do input */
+    border: 1px solid #06547E !important; /* Cor da borda do input */
+    border-radius: 4px; /* Borda arredondada para o input */
+}
+
+
+
+
+
+
+.right-container {
+    flex-grow: 1; /* Faz o right-container ocupar todo o espaço restante */
+    padding: 10px 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 150vh;
+    max-height: 95vh; /* Limita altura para evitar rolagem da página */
+    min-height: 95vh;
+    margin-right: auto;
+
+    border-radius: 15px; /* Estilo opcional para combinar com o left-card */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+.right-card {
+    flex-grow: 1; /* Faz o right-container ocupar todo o espaço restante */
+    padding: 20px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    
+ 
+    background-color: #ffffff;
+    border-radius: 15px; /* Estilo opcional para combinar com o left-card */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 10px;
+    gap: 8px;
+    max-width: 55vh;
+
+
+    max-height: 95vh; /* Limita altura para evitar rolagem da página */
+    min-height: 95vh;
+}
+
+
+
+
+
+
+    
+}
+
+
+/* Estilos para telas maiores (por exemplo, acima de 1200px para telas grandes) */
+@media (min-width: 1400px) {
+    .left-container, .right-container {
+        padding: 40px; /* Aumenta o padding para usar mais espaço */
+    }
+
+    h1, .left-home-text {
+        font-size: 28px; /* Aumenta o tamanho da fonte para títulos */
+    }
+    .input-container-home input, .input-container-home select {
+        padding: 20px; /* Aumenta o padding para inputs para melhor legibilidade */
+    }
+    .register-button {
+        padding: 25px 40px; /* Aumenta o tamanho do botão */
+        font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    }
+
+    .input-container-home {
+
+        margin-bottom: 25px;
+    }
+    
+    .input-container-home input {
+        width: 80%;
+        padding: 25px;
+        margin-top: 5px;
+
+    }
+    
+    .input-container-home select {
+        width: 90%;
+        padding: 25px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .left-home-text {
+        font-size: 28px;
+        margin: 10 auto 10px;
+
+    }
+    
+    .left-home-subtext {
+        font-size: 18px;
+        margin: 0 auto 40px;
+        margin-top: -10px;
+
+    }
+    .input-container-home label {
+        font-size: 18px;
+    }
+
+    .left-card {
+
+        flex-grow: 1; /* Faz o right-container ocupar todo o espaço restante */
+  
+        max-height: 85vh; /* Limita altura para evitar rolagem da página */
+        min-height: 85vh;
+        min-width: 50vh;
+        max-width: 50vh;
+        padding: 25px;
+        width: 100%;
+
+        
+    }
+    .left-container {
+        gap: 20px; /* Espaço entre o left-container e o right-container */
+        min-width: 50vh;
+        max-width: 50vh;
+        max-height: 85vh; /* Limita altura para evitar rolagem da página */
+        min-height: 85vh;
+    }
+
+    .logo {
+        min-width: 300px;
+        min-height: 61px;
+        margin-top: -35px;
+    }
+
+    
+    
+}
+
+
+
+
+
+.popup-success-container {
+    position: fixed;   /* Usando 'fixed' em vez de 'absolute' para que ele permaneça no mesmo lugar, mesmo se o usuário rolar a página */
+    top: 75px;
+    left: 50% !important;
+    transform: translateX(-50%)!important;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1004;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    white-space: nowrap;
+
+}
+
+.popup-error-container {
+    position: fixed;   /* Usando 'fixed' em vez de 'absolute' para que ele permaneça no mesmo lugar, mesmo se o usuário rolar a página */
+    top: 75px;
+    left: 50% !important;
+    transform: translateX(-50%)!important;
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1002;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    white-space: nowrap;
+
+}
+
+.popup-info-container {
+    position: fixed;   /* Usando 'fixed' em vez de 'absolute' para que ele permaneça no mesmo lugar, mesmo se o usuário rolar a página */
+    top: 75px;
+    left: 50% !important;
+    transform: translateX(-50%)!important;
+    background-color: #126d9e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1002;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    white-space: nowrap;
+
+}
+
+.icons-pop-aviso{
+    margin-left: 5px;
+}
+
+.button-delete{
+    background-color: transparent;
+    color: #f44336;
+    border: none;
+    padding: 0px 0px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-delete-table{
+    font-size: 1rem;
+}
+
+
+.button-pdf{
+    background-color: transparent;
+    color: orange;
+    border: none;
+    padding: 0px 0px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-pdf-table{
+    font-size: 1rem;
+}
+
+
+.button-edit{
+    background-color: transparent;
+    color: #06547E;
+    border: none;
+    padding: 0px 0px;
+    
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-edit-table{
+    font-size: 1rem;
+}
+
+.button-entrada{
+    background-color: transparent;
+    color: #00D287;
+    border: none;
+    padding: 0px 0px;
+    margin-left: 5px;
+    
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-entrada-table{
+    font-size: 1rem;
+}
+
+
+.button-assinatura{
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 0px 0px;
+    margin-left: 5px;
+    
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-assinatura-table{
+    font-size: 1rem;
+}
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-entradas {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px; /* Ajuste conforme necessário */
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.modal-entradas h2 {
+    text-align: center;
+}
+
+.modal-entradas select, 
+.modal-entradas button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.modal-entradas table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.modal-entradas th, 
+.modal-entradas td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.modal-entradas button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #06547E; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilização da scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+.right-container::-webkit-scrollbar,
+.right-card::-webkit-scrollbar {
+    width: 10px; /* Largura da scrollbar */
+}
+
+.right-container::-webkit-scrollbar-track,
+.right-card::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da track da scrollbar */
+    border-radius: 10px; /* Arredonda as bordas da track */
+}
+
+.right-container::-webkit-scrollbar-thumb,
+.right-card::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da thumb (parte móvel) da scrollbar */
+    border-radius: 10px; /* Arredonda as bordas da thumb */
+}
+
+.right-container::-webkit-scrollbar-thumb:hover,
+.right-card::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor da thumb ao passar o mouse */
+}
+
+/* Estilização da scrollbar para Firefox */
+.right-container scrollbar,
+.right-card scrollbar {
+    scrollbar-width: thin; /* Define a largura da scrollbar como fina */
+    scrollbar-color: #888 #f1f1f1; /* Define a cor da thumb e da track */
+}
+
+
+
+.modal-delete {
+    background-color: white;
+    padding: 20px 20px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    
+}
+
+.textarea-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.textarea-motivo {
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none; /* Evita que o usuário redimensione a área */
+}
+
+.modal-delete h2 {
+    margin-top: 0;
+}
+
+.modal-delete h2,
+.modal-delete p,
+.modal-actions {
+    text-align: center;
+}
+
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #06547E;
+    color: white;
+    border: none; /* Botão confirmar sem borda */
+    transition: background-color 0.3s ease;
+}
+
+.modal-actions button:hover {
+    background-color: #044a6e; /* Escurece um pouco ao passar o mouse */
+}
+
+.modal-actions button:nth-child(2) { /* Especificamente para o botão Cancelar */
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.modal-actions button:nth-child(2):hover {
+    background-color: #f9f9f9; /* Suave background ao passar o mouse no cancelar */
+}
+
+
+/* Opcional: Adiciona uma transição suave ao abrir o modal */
+.modal-background {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Sombra semi-transparente */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+  }
+  
+  /* Estilo para a caixa de conteúdo do modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+    width: 90%; /* Ocupa até 90% da largura da tela */
+    max-width: 500px; /* Mas não mais que 500px */
+    text-align: center; /* Centraliza o texto dentro do modal */
+  }
+  
+  /* Estilo para o texto dentro do modal */
+  .modal-content p {
+    margin: 0 0 20px 0; /* Margem embaixo do parágrafo */
+    font-size: 16px; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo para os botões dentro do modal */
+  .modal-content button {
+    padding: 10px 20px; /* Padding interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+    margin: 0 10px; /* Margem entre os botões */
+    font-size: 16px; /* Tamanho do texto */
+  }
+  
+  /* Estilos específicos para o botão Confirmar */
+  .modal-content button:first-child {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto branco */
+  }
+  
+  /* Estilos específicos para o botão Cancelar */
+  .modal-content button:last-child {
+    background-color: #f44336; /* Vermelho */
+    color: white; /* Texto branco */
+  }
+  
+
+  
+
+  .modal-assinatura {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0; /* Remove o padding para que o cabeçalho preencha completamente o topo */
+    width: 40%; /* Ajuste conforme necessário */
+    max-width: 500px; /* Ajuste conforme necessário */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar o modal */
+}
+
+.modal-assinatura h2 {
+    margin: 0; /* Remove margens para alinhar corretamente no topo */
+    background-color: #06547E;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 22px; /* Aumenta a fonte do cabeçalho */
+    text-align: center;
+}
+
+
+.modal-assinatura img {
+    display: block;
+    margin: 40px auto 0px;
+    max-width: 80%; /* Ajuste conforme necessário para manter a proporção */
+    max-height: 60%; /* Ajuste conforme necessário para manter a proporção */
+
+    
+    
+}
+
+
+.modal-assinatura p {
+    text-align: center;
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Ajusta o espaçamento no final do modal */
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+/* Adiciona estilo para o fundo do modal para melhorar a leitura */
+.modal-assinatura-content {
+    padding: 20px;
+}
+
+.modal-assinatura-nome {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center;
+    color: #333; /* Cor do texto */
+    margin-top: 20px; /* Espaço acima do nome */
+    margin-bottom: 10px; /* Espaço abaixo do nome, antes da imagem */
+}

@@ -1,0 +1,346 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* Base e Reset */
+
+.login-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #06547E;
+    text-align: center;
+    margin: 0 auto 10px;
+    font-weight:bolder;
+}
+
+.login-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #6C6C6C;
+    text-align: center;
+    margin: 0 auto 30px;
+    white-space: nowrap; /* Adicionado para prevenir quebra de linha */
+}
+
+
+/* Estilo do Cartão de Login */
+/* Ajustes no container principal para centralização completa */
+.content-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* ocupar a altura total da tela */
+
+
+    font-family: 'Arial', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(64,64,64,1) 30%, rgba(132,132,132,1) 59%, rgba(255,255,255,1) 100%);
+      
+      
+    height: 100vh;
+    margin: 0; /* Remova a margem padrão do corpo para evitar espaçamento adicional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px); /* Adiciona desfoque ao fundo */
+}
+
+/* Estilo ajustado do Cartão de Login */
+.login-card {
+    background: #f8f8f8;
+    border-radius: 15px !important;
+    padding: 55px 60px !important;
+    max-width: 300px !important; /* largura máxima ajustada */
+    gap: 25px !important;
+    width: 100%; /* ajustado para ser responsivo */
+    border: 1px solid #f8f8f8;
+    backdrop-filter: blur(5px); /* Adiciona desfoque ao fundo */
+    margin: 0 !important; 
+    justify-content: center;
+
+    max-height: 850px !important;
+ 
+
+    transition: transform 0.2s; /* adicionado transição */
+
+    margin-top: 5px !important;
+
+
+}
+
+/* Efeito de "flutuação" */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.login-card {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Logo da Câmara Municipal */
+.logo-login {
+    max-width: 100%;
+    height: 80px;
+    width: 286px;
+    margin: 0 !important;
+    margin-top: -10px !important;
+}
+
+/* Estilos dos Campos de Entrada */
+.input-container {
+    position: relative;
+    display: flex;
+    font-size: 1.25rem;
+    --primary:#2196f3;
+    margin-top: 20px !important;
+    justify-content: center; /* Adicionando para centralizar horizontalmente */
+}
+
+
+.input-container input {
+    position: relative;  /* Adicione essa linha */
+    padding: 20px 20px!important; /* Ajuste conforme desejado */
+    align-items: flex-end;
+    background: #ffffff;
+    border-radius: 10px;
+    padding-left: 50px !important;
+    border: 1px solid #9e9e9e !important;
+    width: 500px !important;
+    
+    
+}
+
+.input-login{
+    all: unset;
+    color: #333;
+    padding: 1rem;
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    
+    
+    transition: 150ms
+     cubic-bezier(0.4,0,0.2,1);
+}
+
+
+
+.label-login{
+    position: absolute;
+    top: 20px;
+   
+    left: 1rem;
+    padding-left: 50px !important;
+    font-family: 'Inter', sans-serif !important;
+    color: #8C8A97;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 150ms
+     cubic-bezier(0.4,0,0.2,1);
+}
+
+.input-login:focus{
+    border: 1px solid
+     #116E9A !important;
+    
+}
+
+.input-login:focus + .label-login {
+    transform: translateY(-120%) scale(0.7);
+    background: #f8f8f8;
+    padding-inline: 0.3rem;
+    font-size: 20px;
+    top: 1rem;
+    padding-left: 0 !important;
+    color:  #116E9A !important;
+}
+
+.input-login:focus + .label-login,
+.input-login.filled + .label-login {
+    transform: translateY(-120%) scale(0.7);
+    background: #f8f8f8;
+    padding-inline: 0.3rem;
+    font-size: 20px;
+    top: 1rem;
+    padding-left: 0 !important;
+    color:  #116E9A !important;
+}
+
+.input-icon {
+
+    position: relative;
+    left: 35px;   /* Distância do ícone da borda direita da entrada */
+    color: #116E9A;
+    cursor: pointer;
+    font-size: 18px;
+    top: 18px;
+    z-index: 100;
+
+}
+
+.input-icon-right {
+    position: absolute;
+    right: 8px;   /* Distância do ícone da borda direita da entrada */
+    color: #116E9A;
+    cursor: pointer;
+    font-size: 18px;
+    top: 20px;
+
+}
+
+.confirm-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    justify-content: center; /* Adicionando para centralizar horizontalmente */
+}
+
+/* Botão de Entrar */
+.confirm-login {
+    width: 100%;
+    padding: 25px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #116E9A;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px #bdc2c9, -5px -5px 10px #ffffff;
+    transition: 0.3s;
+    min-width: 320px !important;
+    
+   
+}
+
+.confirm-login:hover {
+    background-color: #0A547A; /* Uma cor um pouco mais escura para o hover */
+}
+
+
+.logo-login {
+    display: block;
+    margin: 30px auto 30px;
+}
+
+.error-container {
+    position: relative; /* Isso permitirá o posicionamento absoluto do erro */
+    height: 0; /* Sem altura para evitar o deslocamento do conteúdo */
+}
+
+
+
+.popup-error-container {
+    position: fixed;   /* Usando 'fixed' em vez de 'absolute' para que ele permaneça no mesmo lugar, mesmo se o usuário rolar a página */
+    top: 75px;
+    left: 43%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.popup-error-container.hide {
+    transform: translateY(-20px) scale(0.95);
+    opacity: 0;
+}
+
+.timer-content {
+    display: flex;
+    align-items: center;
+}
+
+.timer-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-text {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+  /* Estilos para Tablets */
+@media screen and (max-width: 1024px) {
+    /* Ajustes no header da página de login */
+
+
+    .login-card {
+        width: 100%;
+        background: #f8f8f8;
+        border-radius: 10px ;
+        padding: 25px 60px;
+        max-width: 400px; /* largura máxima ajustada */
+        width: 100%; /* ajustado para ser responsivo */
+        border: none;
+        backdrop-filter: blur(5px); /* Adiciona desfoque ao fundo */
+        margin: 20px auto; 
+        min-width: 500px;
+        height: 550px;
+        transition: transform 0.2s; /* adicionado transição */
+        box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #d1d9e6; /* External Shadows */
+        margin-top: -80px; /* Adjust the margin-top value according to your preference */
+        
+    }
+
+    /* Efeito de "flutuação" */
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .input-container{
+        width: 100%;
+    }
+
+    .login-form button {
+        width: 100%; /* Define a largura do botão para 100% */
+    }
+
+    .login-form input {
+        width: 100%; /* Aumenta a largura do campo de entrada para ocupar todo o espaço disponível */
+    }
+
+    /* Ajustes no posicionamento dos ícones no input */
+    .input-container .fa-eye {
+        right: 15px;
+    }
+
+    .input-container .fa-lock {
+        right: 45px;
+    }
+
+
+}
+  
